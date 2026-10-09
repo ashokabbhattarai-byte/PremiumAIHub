@@ -15,7 +15,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useLandingAnimations } from "@/hooks/useLandingAnimations";
-import { store, whatsappUrl } from "@/lib/store";
+import { store } from "@/lib/store";
 import { Brand } from "@/components/Brand";
 const HeroPlayer = dynamic(() => import("@/components/HeroPlayer"), {
   ssr: false,
@@ -263,11 +263,11 @@ export default function Home() {
               <a
                 data-magnetic
                 className="button button-gold deal-reveal"
-                href={whatsappUrl}
+                href={store.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle size={19} /> Buy via WhatsApp{" "}
+                <MessageCircle size={19} /> Buy via Facebook{" "}
                 <ArrowUpRight size={19} />
               </a>
               <p className="deal-footnote">

@@ -13,9 +13,10 @@ Open http://localhost:3000. Production: `npm run build` followed by `npm start`.
 
 ## Contact configuration
 
-Copy `.env.example` to `.env.local` and replace both placeholders. WhatsApp expects an international number containing digits only. Facebook expects your actual Messenger or Page URL. Rebuild after changing public environment variables. Defaults also live in `lib/store.ts`.
+All purchase and contact buttons open the Premium AI Hub Facebook Page:
+https://www.facebook.com/profile.php?id=61595414692414
 
-The current contact destinations are intentionally placeholders, as requested. Replace them before launch. All outbound purchase links open a new tab with `noopener noreferrer`.
+Update `lib/store.ts` to change the destination. No contact environment variables are required. All external links open in a new tab with `noopener noreferrer`.
 
 ## Main files
 
@@ -30,4 +31,4 @@ The current contact destinations are intentionally placeholders, as requested. R
 
 Desktop hero pinning adds 320px of scroll progression; touch layouts use normal scrolling. Reduced motion disables pinning, entrances, magnetic movement, and the payment marquee, and pauses the Player. The sticky bar is inert while hidden. Navigation and actions are keyboard accessible. Google Fonts loads Inter and Space Grotesk with system fallbacks.
 
-Offer details and warranty copy reproduce the supplied brief; verify fulfillment terms and availability before publishing. No checkout, payment collection, or account provisioning is implemented: purchases continue in WhatsApp or Messenger.
+Offer details and warranty copy reproduce the supplied brief; verify fulfillment terms and availability before publishing. No checkout, payment collection, or account provisioning is implemented: purchases continue through the Facebook Page.
